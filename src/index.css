@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media only screen and (max-width: 450px) {
+  html {
+      font-size: 9px;
+  }
+  .list-group-horizontal {
+      flex-direction: column !important; 
+  }
+  .list-group-item {
+      padding: .3rem .0rem;
+  }
+  .index {
+      padding: .1rem 1.56rem;
+  }
+  video {
+      width: auto;
+      height: auto;
+      max-width: 95%;
+      max-height: 430px;
+  }
+  img {
+      width: auto;
+      height: auto;
+      max-height: 430px;
+      max-width: 95%;
+  }
+  #video_inz {
+      width: auto;
+      height: auto;
+      max-width: 95%;
+      max-height: 430px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (min-width: 451px) and (max-width: 900px){
+  html {
+      font-size: 10px;
+  }
+  .list-group-item {
+      padding: .6rem .0rem;
+  }
+  .index {
+      padding: .1rem 1.5rem;
+  }
+  video {
+      width: auto;
+      height: auto;
+      max-width: 95%;
+      max-height: 430px;
+  }
+  img {
+      width: auto;
+      height: auto;
+      max-height: 430px;
+      max-width: 95%;
+  }
+  #video_inz {
+      width: auto;
+      height: auto;
+      max-width: 95%;
+      max-height: 430px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  html {
+      font-size: 15px;
+  }
+  video {
+      width: auto;
+      height: auto;
+      max-width: 49%;
+      max-height: 430px;
+  }
+  img {
+      width: auto;
+      height: auto;
+      max-height: 430px;
+      max-width: 49%;
+  }
+  #video_inz {
+      width: auto;
+      height: auto;
+      max-width: 49%;
+      max-height: 430px;
+  }
+  .list-group-item {
+      padding: .6rem .0rem;
+  }
+}
+
+.index{
+  margin: auto;
+  vertical-align: middle;
+  max-width: 950px;
+  font-family: "Ubuntu Light";
+  background-color: #fafafa;
+}
+header div h5 {
+  padding-top: 5px;
+  font-size: 1.3rem;
+}
+header b {
+  font-size: 2.2rem;
+}
+
+article iframe {
+  width: 100%;
+  height: 1400px;
+  border: none;
+}
+
+#photo {
+  width: auto;
+  height: auto;
+  max-height: 10rem;
+  max-width: 100%;
+  float: right;
+}
+
+.list-group {
+  font-size: 1rem;
+}
+
+
+.card {
+  background-color: #b8daff;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.card-white {
+  background-color: #fbfbfb;
+}
+
+article {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+article h3 {
+  font-size: 1.6rem;
+}
+
+article h4 {
+  font-size: 1.4rem;
+}
+
+
+.links {
+  color: #004085;
+}
+
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.more {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
 }

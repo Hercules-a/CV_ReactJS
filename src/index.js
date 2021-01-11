@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import HeaderPl from './components/header-pl';
+import Details from './components/details';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import { Route, BrowserRouter } from 'react-router-dom';
+
+const routing = (
+  <BrowserRouter>
+    <div>
+      <Route path='/' component={HeaderPl} />
+      <Route path='/det/:id' component={Details} />
+    </div>
+  </BrowserRouter>
+)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  routing,  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
